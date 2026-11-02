@@ -44,5 +44,5 @@ while attempts < 7:
         print(f"恭喜你！你猜对了，数字是 {random_number}。你总共尝试了 {attempts} 次。")
         break
 
-if attempts == 7 and guess != random_number:
+else:
     print(f"很遗憾,你没有在7次内猜对数字。正确答案是 {random_number}。")
