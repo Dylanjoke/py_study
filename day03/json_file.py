@@ -1,7 +1,7 @@
 import json
 
 config = {
-    "api_url": "https://api.example.com",
+    "api_url": "https://v1.hitokoto.cn/",
     "timeout": 30,
     "retries": 3,
     "tags": ["语录", "随机", "每日一言"],

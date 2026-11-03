@@ -12,6 +12,7 @@ def calc_pass_rate(test_cases):
     rate = (passed / total) * 100
     return round(rate, 2)  # 保留两位小数
 
+
 def get_failed_cases(test_cases):
     """
     获取失败的测试用例列表。参数是列表，元素是含result键的字典。

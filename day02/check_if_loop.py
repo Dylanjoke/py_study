@@ -23,19 +23,19 @@ attempts = 0
 
 while attempts < 7:
     guess = input("请输入你的猜测（输入'q'退出）：")
-    
-    if guess.lower() == 'q':
+
+    if guess.lower() == "q":
         print("游戏结束。谢谢参与！")
         break
-    
+
     try:
         guess = int(guess)
     except ValueError:
         print("请输入一个有效的数字！")
         continue
-    
+
     attempts += 1
-    
+
     if guess < random_number:
         print("太小了！再试一次。")
     elif guess > random_number:

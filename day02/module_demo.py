@@ -3,7 +3,7 @@ import os
 import datetime
 
 print(random.randint(1, 100))  # 生成一个1到100之间的随机整数
-print(random.choice(['apple', 'banana', 'cherry']))  # 从列表中随机选择一个元素
+print(random.choice(["apple", "banana", "cherry"]))  # 从列表中随机选择一个元素
 
 now = datetime.datetime.now()
 print(now)

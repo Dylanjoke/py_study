@@ -1,5 +1,6 @@
 FILE = "bugs.txt"
 
+
 def add_bug():
     title = input("请输入bug标题：")
     level = input("请输入bug等级（P1/P2/P3，默认P2）：") or "P2"
@@ -7,6 +8,7 @@ def add_bug():
         f.write(f"{title} | {level}\n")
 
     print("Bug已添加！")
+
 
 def show_bugs():
     try:
@@ -23,6 +25,7 @@ def show_bugs():
     for i, line in enumerate(lines, start=1):
         level, title = line.strip().split(" | ")
         print(f"{i}. {title} (等级: {level})")
+
 
 def main():
     while True:
@@ -41,6 +44,7 @@ def main():
             break
         else:
             print("无效的选择，请重新输入。")
+
 
 if __name__ == "__main__":
     main()

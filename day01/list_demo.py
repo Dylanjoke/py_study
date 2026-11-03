@@ -1,16 +1,16 @@
 bugs = ["登录闪退", "支付金额错误", "页面加载慢", "数据丢失", "UI显示异常"]
 
-print(bugs[0])    # 取第一个元素
-print(bugs[-1])    # 取最后一个元素
-print(bugs[1:4])    # 取第二个到第四个元素
-print(bugs[::2])    # 取偶数索引的元素
-print(bugs[::-1])    # 反转列表
-print(len(bugs))    # 列表长度
-print("登录闪退" in bugs)    # 判断元素是否在列表中
+print(bugs[0])  # 取第一个元素
+print(bugs[-1])  # 取最后一个元素
+print(bugs[1:4])  # 取第二个到第四个元素
+print(bugs[::2])  # 取偶数索引的元素
+print(bugs[::-1])  # 反转列表
+print(len(bugs))  # 列表长度
+print("登录闪退" in bugs)  # 判断元素是否在列表中
 
-bugs.append("网络异常")    # 添加元素
-bugs.remove("支付金额错误")    # 删除元素
-bugs[0] = "登录失败"    # 修改元素
+bugs.append("网络异常")  # 添加元素
+bugs.remove("支付金额错误")  # 删除元素
+bugs[0] = "登录失败"  # 修改元素
 print(bugs)
 
 # 遍历:一个个拿出来处理

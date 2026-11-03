@@ -6,6 +6,7 @@ def delete_entry(entries, index):
     else:
         print("索引超出范围，无法删除。")
 
+
 # 2. 在函数里用 try/except 包住文件读取，处理文件不存在的情况
 def read_entries_from_file(filename):
     try:
@@ -18,6 +19,7 @@ def read_entries_from_file(filename):
     except Exception as e:
         print(f"读取文件时发生错误: {e}")
         return []
+
 
 # 3. 试着把数据存成 CSV 格式（用逗号分隔），然后用 Excel 打开看看
 def save_entries_to_csv(entries, filename):

@@ -7,7 +7,9 @@ tester = {
 
 print(tester["name"])  # 访问字典中的值
 print(tester.get("age"))  # 使用 get() 方法访问字典中的值
-print(tester.get("salary", "13K"))  # 使用 get() 方法访问字典中的值，如果键不存在则返回默认值
+print(
+    tester.get("salary", "13K")
+)  # 使用 get() 方法访问字典中的值，如果键不存在则返回默认值
 
 
 print(tester.keys())  # 获取字典的所有键
@@ -49,4 +51,3 @@ for case in test_case:
         print(f"用例ID: {case['id']}, 标题: {case['title']}, 状态: {case['status']} ✅")
     if case["status"] == "失败":
         print(f"用例ID: {case['id']}, 标题: {case['title']}, 状态: {case['status']} ❌")
-    
